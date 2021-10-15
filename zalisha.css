@@ -459,19 +459,7 @@ button a {
     margin: auto;
 }
 
-/*.empty {
-    width: 562px;
-    height: 124px;
-}
-.card-1{
-    position: relative;
-    animation-name: mymove 3s ;
-    animation-delay: 2s;
-}
-@keyframes mymove{
-from{visibility: hidden;}
-to {visibility: visible;}
-}*/
+
 
 .displays .card-1, .card-3, .card-5:nth-child(odd) {
     margin-left: 650px;
@@ -695,4 +683,34 @@ textarea {
     background: #03A84E;
     cursor: pointer;
     color: #fff;
+}
+
+@media all and(max-width:700px) and  (max-height:1000px){
+    body{
+        width: 700px;
+    }
+.nav{
+   width: fit-content; 
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.displays .card-1, .card-3, .card-5:nth-child(odd) {
+    margin-left: 650px;
+    margin-bottom: 10px;
+}
+
+.displays .card-2, .card-4:nth-child(even) {
+    margin-left: 650px;
+    margin-bottom: 10px;
+}
+
+.blank{
+   display: flex;
+   flex-wrap: wrap;
+   height: 1000px;
+}
+    
 }
